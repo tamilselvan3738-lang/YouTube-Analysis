@@ -1,0 +1,33 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>YouTube Sentiment Analyzer</title>
+  <style>
+    /* keep your CSS here (same as you provided) */
+    body{background:#f3f7ff;font-family:Arial;display:flex;justify-content:center;align-items:center;height:100vh;flex-direction:column}
+    h1{color:#002b7b}
+    .box{background:white;padding:25px;border-radius:10px;box-shadow:0 0 12px rgba(0,0,0,0.2);width:400px;text-align:center}
+    input{width:95%;padding:10px;font-size:16px;border-radius:6px;border:1px solid gray}
+    button{margin-top:15px;padding:10px 20px;font-size:18px;border:none;border-radius:6px;background:#005dff;color:white;cursor:pointer}
+    button:hover{background:#003fba}
+    #result{margin-top:18px;font-size:22px;font-weight:bold}
+    #comments{margin-top:12px;text-align:left;max-height:140px;overflow:auto;padding:0 8px}
+    #comments li{list-style:none;padding:6px;border-bottom:1px solid #eee}
+  </style>
+</head>
+<body>
+
+  <h1>YouTube Sentiment Analyzer</h1>
+
+  <div class="box">
+    <input type="text" id="videoLink" placeholder="Paste YouTube video link here">
+    <button id="analyzeBtn">Analyze</button>
+    <div id="result"></div>
+    <ul id="comments"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
